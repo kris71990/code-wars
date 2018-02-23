@@ -1,6 +1,12 @@
-function solution(str){
-  return str.split('').reverse().join('');  
+'use strict';
+
+function reverse(word){
+  let reversed = [];
+  for (let i in word) {
+    reversed.push(word[word.length - 1 - i]);
+  }
+  return reversed.join('');
 }
 
-solution('string');
-// returns 'gnirts'
+reverse('codefellows');
+// returns 'swollefedoc'
